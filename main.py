@@ -31,9 +31,9 @@ async def get_player_data(message, playerNameTag):
 
     competitive_data = response_json['data']['current_data']
     rank = competitive_data['currenttierpatched']
-    tier = competitive_data['currenttier']
+    level = competitive_data['ranking_in_tier']
 
-    await message.channel.send(f"{playerInfo[0]}#{playerInfo[1]}\nRANK: {rank} ({tier}/100)")
+    await message.channel.send(f"{playerInfo[0]}#{playerInfo[1]}\nRANK: {rank} ({level}/100)")
     
 
 @client.event
