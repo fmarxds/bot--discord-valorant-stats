@@ -47,7 +47,7 @@ async def on_message(message):
     command = args[1]
     parameter = args[2]
 
-    if not (command == 'player-status-comp'):
+    if not (command == 'comp'):
         await message.channel.send(f"Comando {command} nao cadastrado.")
 
     await get_player_data(message, parameter)
