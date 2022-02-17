@@ -48,7 +48,7 @@ async def on_message(message):
     if not (is_message_valid(message)):
         return
     
-    args = message.content.split(' ')
+    args = message.content.split(' ', 2)
     command = args[1]
     parameter = args[2]
 
