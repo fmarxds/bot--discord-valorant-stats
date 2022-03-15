@@ -1,6 +1,6 @@
 from discord import message
 
-from app.command.i_command import ICommand
+from i_command import ICommand
 
 
 class HelpCommand(ICommand):

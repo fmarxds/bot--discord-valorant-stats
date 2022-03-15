@@ -3,7 +3,7 @@ import json
 import requests
 from discord import message
 
-from app.command.i_command import ICommand
+from i_command import ICommand
 
 
 class CompetitiveStatusCommand(ICommand):
