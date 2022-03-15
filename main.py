@@ -14,7 +14,7 @@ def is_message_valid(message):
     if len(message.content) <= 6:
         return False
 
-    if not message.content.startswith('!vava '):
+    if not message.content.startswith('!v '):
         return False
 
     return True
