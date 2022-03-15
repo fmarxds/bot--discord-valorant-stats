@@ -3,7 +3,7 @@ import re
 
 import discord
 
-from app.commands import commands
+from commands import commands
 from keep_alive import keep_alive
 
 client = discord.Client()
@@ -35,5 +35,6 @@ async def on_message(message):
         await message.channel.send(f"Comando '{command}' nao cadastrado.\nUtilize o commando '!v help'")
 
 
-keep_alive()
-client.run(os.environ['TOKEN'])
+if __name__ == '__main__':
+    keep_alive()
+    client.run(os.environ['TOKEN'])
